@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="523277bf-58c4-4c16-98bb-fc479e225e16" name="Default" comment="Dodane" />
+    <list default="true" id="523277bf-58c4-4c16-98bb-fc479e225e16" name="Default" comment="Dodane">
+      <change beforePath="$PROJECT_DIR$/Project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/wsgi.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +44,11 @@
       <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#223#232#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +119,6 @@
         <option value="$PROJECT_DIR$/mainapp/urls.py" />
         <option value="$PROJECT_DIR$/mainapp/forms.py" />
         <option value="$PROJECT_DIR$/Project/urls.py" />
-        <option value="$PROJECT_DIR$/Project/wsgi.py" />
         <option value="$PROJECT_DIR$/mainapp/tests.py" />
         <option value="$PROJECT_DIR$/mainapp/views.py" />
         <option value="$PROJECT_DIR$/templates/mainapp/home.html" />
@@ -134,6 +138,7 @@
         <option value="$PROJECT_DIR$/templates/mainapp/offer_list_by_employer.html" />
         <option value="$PROJECT_DIR$/templates/mainapp/employer_edit.html" />
         <option value="$PROJECT_DIR$/Project/settings.py" />
+        <option value="$PROJECT_DIR$/Project/wsgi.py" />
       </list>
     </option>
   </component>
@@ -558,8 +563,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#223#232#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

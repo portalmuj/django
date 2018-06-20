@@ -26,10 +26,3 @@ project_home = u'/home/mkkuc/Project'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
-# set environment variable to tell django where your settings.py is
-os.environ['DJANGO_SETTINGS_MODULE'] = 'Project.settings'
-
-
-# serve django via WSGI
-application = get_wsgi_application()
-
