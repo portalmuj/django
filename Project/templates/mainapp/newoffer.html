@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<script src="{% static 'js/app.js' %}"></script>
+<html lang="en">
+<head>
+    <title>{{ offer }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="container-box">
+        <div class="navbar-header">
+            <a class="btn-menu" href="{% url 'index' %}">Portal Pracy</a>
+            <a class="btn-menu" href="{% url 'home' %}">Oferty</a>
+            {% if user.is_authenticated %}
+                 <a class="btn-menu" href="{% url 'newoffer' %}">Dodaj ofertę</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+                    <a class="btn-menu" href="{% url 'logout' %}?next={{request.path}}">Wyloguj się: {{ user.get_username }}</a>
+                    <a class="btn-menu" href="{% url 'info' %}">Profil</a>
+                {% else %}
+                    <a class="btn-menu" href="{% url 'login' %}?next={{request.path}}">Zaloguj się</a>
+                {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron " ; content="width=device-width">
+    <div class="container-newoffer">
+        <div class="container-fluid" align="center" >
+        <div class="container-newoffer">
+            <h2>Nowa oferta</h2>
+            <form method="POST" class="post-form">{% csrf_token %}
+                <table style="width: 20%">{{ form.as_table }}</table>
+                <div class="container-btns">
+                    <button class='btn-main' style="margin-right: 10px; width: 50%">Odśwież</button>
+                    <button type="submit" style="width: 50%" class="btn-main">Dodaj</button>
+                </div>
+            </form>
+            <a href="{% url 'index' %}" ><button class="btn-main" style="margin-top: 10px; width: 20%">Powrót</button></a>
+            <br>
+            {{ templateText }}
+        </div>
+
+    </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

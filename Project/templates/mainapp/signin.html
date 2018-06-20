@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <title>Portal Pracy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="container-box">
+        <div class="navbar-header">
+            <a class="btn-menu" href="{% url 'index' %}">Portal Pracy</a>
+            <a class="btn-menu" href="{% url 'home' %}">Oferty</a>
+            {% if user.is_authenticated %}
+                 <a class="btn-menu" href="{% url 'newoffer' %}">Dodaj ofertę</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+                    <a class="btn-menu" href="{% url 'logout' %}?next={{request.path}}">Wyloguj się: {{ user.get_username }}</a>
+                    <a class="btn-menu" href="{% url 'info' %}">Profil</a>
+                {% else %}
+                    <a class="btn-menu" href="{% url 'login' %}?next={{request.path}}">Zaloguj się</a>
+                {% endif %}
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" content="width=device-width">
+    <div class="container-fluid" align="center" >
+
+        <h1>Rejestracja</h1>
+        <form method="POST">{% csrf_token %}
+            <table>
+                {{ user_form.as_table }}
+                {{ emp_form.as_table }}
+            </table>
+            <div class="container-btns">
+                <button class='captcha-refresh btn-main' style="margin-right: 10px; width: 50%">Odśwież</button>
+                <button type="submit" style="width: 50%" class="save btn-main">Dodaj</button>
+            </div>
+        </form>
+        <br>
+        <a href="{% url 'index' %}" class="btn-main" style="width: 20%">Powrót</a>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

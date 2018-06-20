@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <title>Portal Pracy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="container-box">
+        <div class="navbar-header">
+            <a class="btn-menu" href="{% url 'index' %}">Portal Pracy</a>
+            <a class="btn-menu" href="{% url 'home' %}">Oferty</a>
+            {% if user.is_authenticated %}
+                 <a class="btn-menu" href="{% url 'newoffer' %}">Dodaj ofertę</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+                    <a class="btn-menu" href="{% url 'logout' %}?next={{request.path}}">Wyloguj się: {{ user.get_username }}</a>
+                    <a class="btn-menu" href="{% url 'info' %}">Profil</a>
+                {% else %}
+                    <a class="btn-menu" href="{% url 'login' %}?next={{request.path}}">Zaloguj się</a>
+                {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" ; content="width=device-width">
+    <div align="center" class="container">
+         <form method="post">{% csrf_token %}
+             <br>
+		     <p> Usuwanie danych wymaga potwierdzenia</p>
+             <input type="submit" class="btn-main" value="Potwierdź" />
+         </form>
+         <br>
+         <a href="{% url 'index' %}" class="btn-main">Powrót do strony głównej</a>
+    </div>
+</div>
+</body>
+</html>

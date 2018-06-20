@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #eeeeee;
+}
+
+
+
+.container-box{
+    width: 100%;
+    height: 50px;
+    background: #10465e;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.navbar-header{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.main{
+    overflow: hidden;
+    background-image: url("img/main1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 100px;
+    box-shadow: 0px 10px 45px #10465e;
+    color: #10465e;
+    z-index: 10;
+}
+.container-main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.container-search{
+    background: url("img/search.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 30px;
+    width: 100vw;
+}
+
+.container-newoffer{
+    background: url("img/newoffer.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-user{
+    background: url("img/newoffer.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-login{
+    width: 30%;
+    padding: 20px;
+}
+
+.container-list-jobs{
+    color: #10465e;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 2px solid #b3c6cd;
+    border-right: 2px solid #b3c6cd;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-list-jobs > h2{
+    color: #10465e;
+}
+
+.list-jobs,
+.list-jobs-home{
+    height: 400px;
+    display: flex;
+    list-style: none;
+    color: #b3c6cd;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.list-jobs-home{
+    margin-top: 20px;
+    background: #b3c6cd;
+    border: 1px solid #10465e;
+}
+
+.element-jobs,
+.element-jobs-home{
+    height: 30px;
+    padding-left: 10px;
+    color: #10465e;
+    border-left: 2px solid transparent;
+}
+
+.element-jobs:hover,
+.element-jobs-home:hover{
+    border-left: 2px solid #10465e;
+}
+
+.element-jobs-home{
+    font-size: 20px;
+}
+
+
+.btn-menu{
+    color: #b3c6cd;
+    padding: 15px;
+    border-bottom: 3px solid transparent;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.btn-menu:hover{
+    color: #b3c6cd;
+    border-bottom: 3px solid #b3c6cd;
+}
+
+.btn-main{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #10465e;
+    padding: 10px;
+    color: #10465e;
+}
+.btn-large{
+    width: 50%;
+}
+
+
+.btn-main:hover{
+    background: #10465e;
+    color: #ffffff;
+    border: 3px solid #10465e;
+}
+
+.btn-search{
+    color: #10465e;
+    border: 1px solid #10465e;;
+    padding: 9px;
+    background: #b3c6cd;
+}
+.btn-search:hover{
+    color: #b3c6cd;
+    background: #10465e;
+    border: 1px solid #10465e;
+}
+
+.search-input,
+.registration-input{
+    padding: 9px;
+    background: #b3c6cd;
+    border: 1px solid #10465e;
+    margin-right: 10px;
+}
+
+.login-input{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.container-login{
+    background: #b3c6cd;
+    border: 1px solid #10465e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-lack-results{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
+    background: #b3c6cd;
+    border: 1px solid #10465e;
+}
+
+.employer{
+    color: #10465e;
+    border-bottom: 5px solid transparent;
+    padding: 5px;
+}
+
+.employer:hover{
+    border-bottom: 5px solid #10465e;
+}
+
+.employer-description{
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background: #b3c6cd;
+    border: 1px solid #10465e;
+}
+
+.employer-description-child{
+    width: 50%;
+}
+
+.container-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.container-inputs{
+    width: auto;
+    border: 1px solid #10465e;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+

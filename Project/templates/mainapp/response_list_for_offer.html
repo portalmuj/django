@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Portal Pracy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+  </head>
+  <body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="container-box">
+        <div class="navbar-header">
+            <a class="btn-menu" href="{% url 'index' %}">Portal Pracy</a>
+            <a class="btn-menu" href="{% url 'home' %}">Oferty</a>
+            {% if user.is_authenticated %}
+                 <a class="btn-menu" href="{% url 'newoffer' %}">Dodaj ofertę</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+                    <a class="btn-menu" href="{% url 'logout' %}?next={{request.path}}">Wyloguj się: {{ user.get_username }}</a>
+                    <a class="btn-menu" href="{% url 'info' %}">Profil</a>
+                {% else %}
+                    <a class="btn-menu" href="{% url 'login' %}?next={{request.path}}">Zaloguj się</a>
+                {% endif %}
+        </div>
+    </div>
+</div>
+
+  <div class="jumbotron">
+         <div class="container">
+             <div>
+            <h1>{{offer.company.companyName}}: {{ offer.position}}</h1>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="lead">{{offer.description }}</p>
+                </div>
+            </div>
+            {% if object_list %}
+            <ul>
+                {% for form in form_list %}
+                    <li>
+                        <div align="center">
+                            <a href="{% url 'response_detail' form.pk %}"class="btn-main">
+                                {{form.forename}} {{ form.surname }}
+                            </a>
+                        </div>
+
+                    </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <div>
+                    <h3>Brak odpowiedzi na ofertę.</h3>
+                    <a href="{% url 'index' %}" class="btn-main">Powrót</a>
+                </div>
+
+            {% endif %}
+                 </div>
+         </div>
+    </div>
+  </body>
+</html>
