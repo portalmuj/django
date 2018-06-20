@@ -26,9 +26,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'z-a*mcb9#o9^c9h7k&2t&n@z2d)cf18ef3m=rnlot3jy@%#4o_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True#False
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://mkkuc.pythonanywhere.com/']
 
 #portalpracy.pythonanywhere.com
 # Application definition
