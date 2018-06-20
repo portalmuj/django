@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="523277bf-58c4-4c16-98bb-fc479e225e16" name="Default" comment="Dodane">
-      <change beforePath="$PROJECT_DIR$/Project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="523277bf-58c4-4c16-98bb-fc479e225e16" name="Default" comment="Dodane" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="170">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -149,9 +147,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1913" />
-    <option name="width" value="980" />
-    <option name="height" value="1047" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -190,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../De_Dzango" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -267,8 +266,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.66174495" weight="0.5740741" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49932885" weight="0.32905984" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6979866" weight="0.15384616" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7684564" visible="true" weight="0.28826815" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7684564" visible="true" weight="0.28826815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -543,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -559,8 +551,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
